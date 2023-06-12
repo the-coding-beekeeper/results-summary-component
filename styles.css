@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-red: hsl(0, 100%, 67%);
+  --font-yellow: hsl(39, 100%, 56%);
+  --font-green: hsl(166, 100%, 37%);
+  --font-blue: hsl(234, 85%, 45%);
+  --background-gradient-light-blue: hsl(252, 100%, 67%);
+  --background-gradient-dark-blue: hsl(241, 81%, 54%);
+  --circle-gradient-light-blue: hsla(256, 72%, 46%, 1);
+  --circle-gradient-dark-blue: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.sr-only {
+  position: absolute ;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  box-shadow: 10px 20px 10px  hsla(252, 100%, 67%, 0.1);
+}
+.result-card {
+  text-align: center;
+  background-image: linear-gradient(var(--background-gradient-light-blue), var(--background-gradient-dark-blue));
+  color: white;
+  font-size: 18px;
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
+ }
+.result-heading {
+  font-size: 18px;
+  font-weight:500;
+  margin-top: 1.5rem;
+  opacity: 0.6;
+}
+.your-result {
+  background-image: linear-gradient(var(--circle-gradient-light-blue), var(--circle-gradient-dark-blue));
+  border-radius: 50%;
+  margin: 1.5rem auto;
+  width: 8.5rem;
+  aspect-ratio: 1;
+}
+.result-number {
+  font-size: 54px;
+  font-weight: 800;
+  padding-top: 1.5rem;
+}
+.of-hundred {
+  color: var(--background-gradient-light-blue);
+  font-size: 16px;
+}
+.text {
+  font-size: 16px;
+  padding: 0 3.6rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-bottom: 2.2rem;
+}
+.great {
+  font-size: 24px;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 1);
+  line-height: 3rem;
+}
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.summary-heading {
+  color: var(--dark-gray-blue);
+  width: 84%;
+  font-size: 18px;
+  font-weight:780;
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.2rem;
+}
+.theme {
+  width: 84%;
+  height: 3.5rem;
+  border-radius: 8px;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#reaction {
+  color: var(--font-red);
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+#memory {
+  color: var(--font-yellow);
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+#verbal {
+  color: var(--font-green);
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+#visual {
+  color: var(--font-blue);
+  background-color: hsla(234, 85%, 45%, 0.05) ;
+}
+.unit {
+  display: flex;
+  margin-left: 0.9rem;
+}
+.unit_name {
+  margin-left: 0.8rem;
+  font-size: 15px;
+  font-weight: 900;
+}
+.points {
+  font-weight: 900;
+}
+.values {
+  color: var(--dark-gray-blue);
+  padding-right: 1rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+.btn {
+  width: 84%;
+  height: 3.5rem;
+  border-radius: 1.75rem;
+  border: none;
+  color: var(--pale-blue);
+  background-color: var(--dark-gray-blue);
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+  font-size: 17px;
+  font-weight:600;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--background-gradient-dark-blue);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 800px ) {
+  .container {
+    flex-direction: row;
+    height: 32rem;
+    width: 46rem;
+    border-radius: 30px;
+  }
+  .result-card {
+    width: 50%;
+    border-radius: 30px;
+  }
+  .summary-card {
+    width: 50%;
+  }
+  .result-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 2.5rem;
+  }
+  .your-result {
+    margin: 2.2rem auto;
+    width: 12rem;
+  }
+  .result-number {
+    font-size: 68px;
+    padding-top: 3rem;
+    }
+  .great {
+    line-height: 2.9rem;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .text {
+    font-size: 18px;
+    margin-top: 0.7rem;
+    padding: 0 3.8rem;
+  }
+  .summary-heading {
+    color: var(--dark-gray-blue);
+    width: 78%;
+    margin-top: 2.5rem;
+    font-size: 22px;
+    font-weight:600;
+    margin-bottom: 1.0rem;
+    padding-left: 0.2rem;
+  }
+  .theme {
+    width: 78%;
+     }
+  .unit_name {
+     font-size: 18px;
+  }
+  .values {
+     font-size: 18px;
+  }
+  .btn {
+    margin-top: 1.8rem;
+    width: 78%;
+  }
+}
