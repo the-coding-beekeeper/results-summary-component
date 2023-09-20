@@ -2,9 +2,11 @@
 
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Challenge
 
-Thanks for checking out this front-end coding challenge.
+This is a challenge provided by Frontend Mentor to train HTML, CSS and JavaScript skills.
+
+
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
