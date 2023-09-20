@@ -4,13 +4,10 @@
 
 ## Challenge
 
-This is a challenge provided by Frontend Mentor to train HTML, CSS and JavaScript skills.
+This is a challenge provided by [Frontend Mentor](https://www.frontendmentor.io) to train your HTML, CSS and JavaScript coding skills.
 
 
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a basic understanding of HTML and CSS.**
 
 ## The challenge
 
