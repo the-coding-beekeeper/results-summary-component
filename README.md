@@ -4,7 +4,7 @@
 
 ## Challenge
 
-This is a challenge provided by [Frontend Mentor](https://www.frontendmentor.io) to train your HTML, CSS and JavaScript coding skills.
+This is a challenge provided by [Frontend Mentor](https://www.frontendmentor.io) to train your HTML, CSS and JavaScript coding skills.<br/>
 The challenge is to build out the given template and get it looking as close to the design as possible.
 
 
